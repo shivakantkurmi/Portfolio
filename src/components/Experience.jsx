@@ -11,7 +11,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
-import internship from "../assets/internship.png";
+import internship from "../assets/Internship.png";
 import vit from "../assets/VIT.jpeg"; // Placeholder for VIT University icon
 import school from "../assets/school.png"; 
 
