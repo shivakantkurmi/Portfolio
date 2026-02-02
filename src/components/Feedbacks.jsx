@@ -1,7 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaDownload } from "react-icons/fa";
-import { SiGeeksforgeeks, SiLeetcode } from "react-icons/si"; // Using a specific LeetCode icon
+import { 
+  SiLeetcode, 
+  SiGeeksforgeeks, 
+  SiCodeforces, 
+  SiHackerrank 
+} from "react-icons/si";
+
 
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
@@ -48,6 +54,22 @@ const Profiles = () => {
             icon={<SiGeeksforgeeks />}
             link="https://www.geeksforgeeks.org/user/shivakant_kurmi_23bcg10140/"
             colorClass="hover:bg-green-600"
+          />
+
+          <ProfileCard
+              name="Codeforces"
+              rank="Competitive Programmer"
+              icon={<SiCodeforces />}
+              link="https://codeforces.com/profile/shivakant_kurmi"
+              colorClass="hover:bg-blue-600"
+          />
+
+          <ProfileCard
+              name="HackerRank"
+              rank="5★ C++"
+              icon={<SiHackerrank />}
+              link="https://www.hackerrank.com/profile/shivakantkurmi49"
+              colorClass="hover:bg-emerald-600"
           />
         </motion.div>
 
