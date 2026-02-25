@@ -262,7 +262,7 @@ const projects = [
     ],
     image: expenseTracker,
     source_code_link: "https://github.com/shivakantkurmi/AI-Expense-Tracker",
-    live_link: "",
+    live_link: "https://ai-expense-tracker-frontend.vercel.app/",
   },
   {
     name: "Survival Arena: Cyborg Showdown",
