@@ -126,6 +126,46 @@
   transform: translateZ(0);
 }
 
+/* Smooth card image hover reveal */
+.card-img_hover {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.group:hover .card-img_hover,
+.card-img_hover:hover {
+  opacity: 1;
+}
+
+/* Glowing violet border utility */
+.glow-border {
+  box-shadow: 0 0 0 1.5px #915EFF44, 0 0 20px #915EFF22;
+  transition: box-shadow 0.3s ease;
+}
+.glow-border:hover {
+  box-shadow: 0 0 0 1.5px #915EFF99, 0 0 28px #915EFF55;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050816;
+}
+::-webkit-scrollbar-thumb {
+  background: #915EFF66;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #915EFF;
+}
+
+/* Selection color */
+::selection {
+  background: #915EFF44;
+  color: #ffffff;
+}
+
 @keyframes mulShdSpin {
   0%,
   100% {

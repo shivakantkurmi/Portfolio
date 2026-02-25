@@ -43,14 +43,14 @@ const Profiles = () => {
         >
           <ProfileCard
             name="LeetCode"
-            rank="Global Rank: 44,676"
+            rank="Global Rank: 39,569 && Knight (Top 0.5%)"
             icon={<SiLeetcode />}
             link="https://leetcode.com/u/Shivakant_kurmi/"
             colorClass="hover:bg-yellow-600"
           />
           <ProfileCard
             name="GeeksforGeeks"
-            rank="Institute Rank: 15/3682"
+            rank="Institute Rank: 7/3682"
             icon={<SiGeeksforgeeks />}
             link="https://www.geeksforgeeks.org/user/shivakant_kurmi_23bcg10140/"
             colorClass="hover:bg-green-600"
@@ -60,7 +60,7 @@ const Profiles = () => {
               name="Codeforces"
               rank="Competitive Programmer"
               icon={<SiCodeforces />}
-              link="https://codeforces.com/profile/shivakant_kurmi"
+              link="https://codeforces.com/profile/shivakantkurmi"
               colorClass="hover:bg-blue-600"
           />
 

@@ -1,6 +1,6 @@
-import React from "react";
-import {Tilt} from "react-tilt";
+﻿import React from "react";
 import { motion } from "framer-motion";
+import { FiExternalLink } from "react-icons/fi";
 
 import { styles } from "../styles";
 import { github } from "../assets";
@@ -15,16 +15,19 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.5, delay: (index % 3) * 0.15, ease: "easeOut" }}
+    >
+      <motion.div
+        whileHover={{ y: -8 }}
+        transition={{ type: "spring", stiffness: 200, damping: 20 }}
+        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full cursor-default'
       >
         <div className='relative w-full h-[230px]'>
           <img
@@ -33,10 +36,20 @@ const ProjectCard = ({
             className='w-full h-full object-cover rounded-2xl'
           />
 
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+          <div className='absolute inset-0 flex justify-end gap-2 m-3 card-img_hover'>
+            {live_link && (
+              <div
+                onClick={() => window.open(live_link, "_blank")}
+                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+                title='See Live'
+              >
+                <FiExternalLink className='w-1/2 h-1/2 text-white' />
+              </div>
+            )}
             <div
               onClick={() => window.open(source_code_link, "_blank")}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              title='Source Code'
             >
               <img
                 src={github}
@@ -62,7 +75,7 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
-      </Tilt>
+      </motion.div>
     </motion.div>
   );
 };
@@ -71,7 +84,7 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
+        <p className={`${styles.sectionSubText}`}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 
@@ -80,11 +93,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          A collection of real-world projects that showcase my skills across full-stack development, AI/ML, game development, and AR — each with links to the source code and live demos where available.
         </motion.p>
       </div>
 

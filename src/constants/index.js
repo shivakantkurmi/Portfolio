@@ -28,6 +28,9 @@ import arAnatomy from "../assets/arAnatomy.png";
 import arSolarSystem from "../assets/arSolarSystem.png";
 import pewPewWaves from "../assets/pewPewWaves.png";
 import speedwaySaga from "../assets/speedwaySaga.png";
+import mycampus from "../assets/My-Campus.png";
+import fixitnow from "../assets/fixitnow.png";
+import questforge from "../assets/questforge.png";
 
 // Experience Icons from assets
 import codSoft from "../assets/company/codSoft.png"; // Using as a placeholder for microsoft
@@ -114,6 +117,7 @@ const technologies = [
 
 const experiences = [
   {
+
     title: "AI Intern",
     company_name: "Microsoft Initiative with Edunet Foundation & AICTE",
     icon: codSoft, // Placeholder for microsoft
@@ -144,6 +148,75 @@ const testimonials = [];
 
 const projects = [
   {
+    name: "Fix-It-Now",
+    description:
+      "A full-stack civic issue reporting platform that enables citizens to report local infrastructure problems and allows administrators to manage, track, and resolve them in real time with some extra functionality.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: fixitnow, // TODO: replace with actual project image
+    source_code_link: "https://github.com/shivakantkurmi/Fix-It-Now",
+    live_link: "https://fix-it-now-six.vercel.app/",
+  },
+  {
+    name: "My-Campus",
+    description:
+      "A full-stack campus-life management platform built for VIT Bhopal students and faculty. It replaces scattered, manual workflows — attendance sheets, hunting for professors, keeping track of grades, and finding study material — with a single, fast, role-aware web application.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "express",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: mycampus, // TODO: replace with actual project image
+    source_code_link: "https://github.com/shivakantkurmi/My-Campus",
+    live_link: "https://my-campus-frontend.vercel.app",
+  },
+  {
+    name: "Quest-Forge",
+    description:
+      "A gamified full-stack learning platform where developers level up by solving coding challenges, completing interactive learning modules, and practising AI-powered mock interviews — all wrapped in a dark-fantasy RPG aesthetic.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ai",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: questforge, // TODO: replace with actual project image
+    source_code_link: "https://github.com/shivakantkurmi/QuestForge",
+    live_link: "",
+  },
+
+
+
+  {
     name: "EduMentor AI",
     description:
       "A personalized AI study tool that leverages the Gemini 1.5 Flash API to generate custom study plans, quizzes, and learning materials. It helps users overcome difficulties and understand core concepts in various problem-solving domains.",
@@ -163,11 +236,12 @@ const projects = [
     ],
     image: eduMentor,
     source_code_link: "https://github.com/shivakantkurmi/Edumentor-AI",
+    live_link: "",
   },
   {
-    name: "Expense Tracker",
+    name: "AI Expense Tracker",
     description:
-      "A full-stack MERN application for personal finance management, implementing secure user authentication and visualizing data with Chart.js to provide actionable insights into spending habits.",
+      "A full-stack MERN application for personal finance management with AI-powered insights, implementing secure user authentication and visualizing data with Chart.js to provide actionable recommendations on spending habits.",
     tags: [
       {
         name: "react",
@@ -186,8 +260,9 @@ const projects = [
         color: "orange-text-gradient",
       },
     ],
-     image: expenseTracker,
-    source_code_link: "https://github.com/shivakantkurmi/Expense-Tracker",
+    image: expenseTracker,
+    source_code_link: "https://github.com/shivakantkurmi/AI-Expense-Tracker",
+    live_link: "",
   },
   {
     name: "Survival Arena: Cyborg Showdown",
@@ -209,6 +284,7 @@ const projects = [
     ],
     image: survivalArena,
     source_code_link: "https://github.com/shivakantkurmi/Survival-Arena---Cyborg-Showdown.git",
+    live_link: "",
   },
   {
     name: "Pew Pew Waves",
@@ -230,6 +306,7 @@ const projects = [
     ],
     image: pewPewWaves,
     source_code_link: "https://github.com/shivakantkurmi/Pew-Pew-Waves",
+    live_link: "",
   },
   {
     name: "Speedway Saga",
@@ -251,6 +328,7 @@ const projects = [
     ],
     image: speedwaySaga,
     source_code_link: "https://github.com/shivakantkurmi/Speedway-Saga",
+    live_link: "",
   },
   {
     name: "AR Anatomy",
@@ -272,6 +350,7 @@ const projects = [
     ],
     image: arAnatomy,
     source_code_link: "https://github.com/shivakantkurmi/AR-Anatomy",
+    live_link: "",
   },
   {
     name: "AR Solar System Simulation",
@@ -293,6 +372,7 @@ const projects = [
     ],
     image: arSolarSystem,
     source_code_link: "https://github.com/shivakantkurmi/AR-Solar-System-Simulation-App.git",
+    live_link: "",
   },
    
   {
@@ -315,7 +395,9 @@ const projects = [
     ],
     image: attendanceSystem,
     source_code_link: "https://github.com/shivakantkurmi/Face-Recognition.git",
+    live_link: "",
   },
+
 ];
 
 export { services, technologies, experiences, testimonials, projects };
