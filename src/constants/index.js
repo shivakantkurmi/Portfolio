@@ -136,7 +136,7 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "2023 - Present",
     points: [
-      "Maintaining a high CGPA of 9.82/10.0.",
+      "Maintaining a high CGPA of 9.83/10.0.",
       "Selected for the prestigious STARS Scheme for academic excellence.",
       "Strengthening skills in Data Structures, Algorithms, MERN Stack, and Unity Game Development.",
     ],
@@ -165,7 +165,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: fixitnow, // TODO: replace with actual project image
+    image: fixitnow, 
     source_code_link: "https://github.com/shivakantkurmi/Fix-It-Now",
     live_link: "https://fix-it-now-six.vercel.app/",
   },
@@ -187,7 +187,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: mycampus, // TODO: replace with actual project image
+    image: mycampus, 
     source_code_link: "https://github.com/shivakantkurmi/My-Campus",
     live_link: "https://my-campus-frontend.vercel.app",
   },
@@ -209,7 +209,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: questforge, // TODO: replace with actual project image
+    image: questforge, 
     source_code_link: "https://github.com/shivakantkurmi/QuestForge",
     live_link: "",
   },

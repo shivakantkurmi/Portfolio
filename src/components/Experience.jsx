@@ -34,7 +34,7 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "2023 - Present",
     points: [
-      "Maintaining a high CGPA of 9.82/10.0 through dedicated study and academic rigor.",
+      "Maintaining a high CGPA of 9.83/10.0 through dedicated study and academic rigor.",
       "Selected for the prestigious STARS Scheme, recognizing academic excellence.",
       "Building a strong foundation in Data Structures, Algorithms, MERN Stack, and Unity Game Development.",
     ],
