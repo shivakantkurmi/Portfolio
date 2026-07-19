@@ -56,13 +56,13 @@ const Profiles = () => {
             colorClass="hover:bg-green-600"
           />
 
-          <ProfileCard
+          {/* <ProfileCard
               name="Codeforces"
               rank="specialist, 1448"
               icon={<SiCodeforces />}
               link="https://codeforces.com/profile/shivakantkurmi"
               colorClass="hover:bg-blue-600"
-          />
+          /> */}
 
           <ProfileCard
               name="HackerRank"
