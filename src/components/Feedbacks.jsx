@@ -43,7 +43,7 @@ const Profiles = () => {
         >
           <ProfileCard
             name="LeetCode"
-            rank="Global Rank: 27,553 && Knight (Top 0.5%)"
+            rank="Global Rank: 27,553 && Knight (Top 5%)"
             icon={<SiLeetcode />}
             link="https://leetcode.com/u/Shivakant_kurmi/"
             colorClass="hover:bg-yellow-600"
