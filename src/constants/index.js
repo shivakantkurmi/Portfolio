@@ -37,6 +37,9 @@ import codSoft from "../assets/company/codSoft.png"; // Using as a placeholder f
 import unity from "../assets/company/unity.png"; // Using as a placeholder for vit
 import book from "../assets/company/book.png"; // Using as a placeholder for school
 
+// Additional project image
+import cloudflow from "../assets/cloudflow.jpg";
+
 export const navLinks = [
   {
     id: "about",
@@ -113,6 +116,10 @@ const technologies = [
     name: "Express JS",
     icon: express,
   },
+  {
+    name: "Canva",
+    icon: canva,
+  },
 ];
 
 const experiences = [
@@ -148,9 +155,35 @@ const testimonials = [];
 
 const projects = [
   {
+    name: "CloudFlow",
+    description:
+      "A unified project management platform with organizations, Kanban boards, RBAC, Socket.IO real-time comments, drag-and-drop task management, and activity logs. AWS-ready architecture with EC2, RDS, S3, CloudFront, and Load Balancer for scalable deployment.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "postgresql",
+        color: "green-text-gradient",
+      },
+      {
+        name: "aws",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "socket.io",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: cloudflow,
+    source_code_link: "https://github.com/shivakantkurmi/CloudFlow",
+    live_link: "",
+  },
+  {
     name: "Fix-It-Now",
     description:
-      "A full-stack civic issue reporting platform that enables citizens to report local infrastructure problems and allows administrators to manage, track, and resolve them in real time with some extra functionality.",
+      "A full-stack MERN civic issue reporting platform with ML-based complaint prioritization, RAG-based AI assistant, admin dashboard with analytics and heatmaps, and secure APIs with rate limiting to prevent DDoS and brute-force attacks.",
     tags: [
       {
         name: "react",
@@ -172,7 +205,7 @@ const projects = [
   {
     name: "My-Campus",
     description:
-      "A full-stack campus-life management platform built for VIT Bhopal students and faculty. It replaces scattered, manual workflows — attendance sheets, hunting for professors, keeping track of grades, and finding study material — with a single, fast, role-aware web application.",
+      "A full-stack campus-life management platform with RBAC supporting 150+ users across Student, Faculty, and Admin roles. Features QR Attendance, Notes Sharing, and Faculty Search managing 300+ faculty records — reduced attendance time by 66% and DB search latency by 60%.",
     tags: [
       {
         name: "react",

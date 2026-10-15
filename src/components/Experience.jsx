@@ -12,54 +12,67 @@ import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
 import internship from "../assets/Internship.png";
-import vit from "../assets/VIT.jpeg"; // Placeholder for VIT University icon
+import vit from "../assets/VIT.jpeg";
+import school from "../assets/School.png";
 
 const experiences = [
   {
     title: "AI Intern",
     company_name: "Microsoft Initiative with Edunet Foundation & AICTE",
-    icon: internship, // Using the imported icon
+    icon: internship,
     iconBg: "#383E56",
     date: "April 2025 - May 2025",
     points: [
+      "Selected for a national 4-week internship as part of a Microsoft & AICTE initiative in collaboration with Edunet Foundation.",
       "Engineered and deployed machine learning models to solve real-world problems, applying advanced AI technologies.",
-      "Collaborated in an agile team to design, develop, and optimize AI-driven solutions for enhanced project outcomes.",
-      "Developed EduMentor AI, a personalized study tool using the Gemini 1.5 Flash API to generate custom study plans and quizzes.",
+      "Developed EduMentor AI, a RAG-based learning platform using the Gemini API, FAISS vector search, and embedding-based context retrieval to generate personalized study plans and quizzes.",
     ],
   },
   {
-    title: "B.Tech, Computer Science & Engineering",
-    company_name: "VIT Bhopal University, MP",
-    icon: vit, // Using the placeholder icon
+    title: "B.Tech, Computer Science & Engineering (Gaming Technology)",
+    company_name: "Vellore Institute of Technology (VIT Bhopal), MP",
+    icon: vit,
     iconBg: "#E6DEDD",
-    date: "2023 - Present",
+    date: "2023 - 2027",
     points: [
       "Maintaining a high CGPA of 9.83/10.0 through dedicated study and academic rigor.",
       "Selected for the prestigious STARS Scheme, recognizing academic excellence.",
-      "Building a strong foundation in Data Structures, Algorithms, MERN Stack, and Unity Game Development.",
+      "Building a strong foundation in Data Structures, Algorithms, MERN Stack, AWS Cloud, and Unity Game Development.",
     ],
   },
-  // {
-  //   title: "Class XII (Senior Secondary)",
-  //   company_name: "Govt. HSS Hinota Kalan Hatta, Damoh, MP",
-  //   icon: school, // Using the placeholder icon
-  //   iconBg: "#383E56",
-  //   date: "2023",
-  //   points: [
-  //     "Achieved an outstanding score of 95% in the Madhya Pradesh Board Result.",
-  //     "Honored as the District Topper for securing the highest score in the region.",
-  //   ],
-  // },
-  // {
-  //   title: "Class X (High School)",
-  //   company_name: "Govt. High School Bhainsa Hatta, Damoh, MP",
-  //   icon: school, // Using the placeholder icon
-  //   iconBg: "#E6DEDD",
-  //   date: "2021",
-  //   points: [
-  //     "Secured an excellent score of 95% in the board examinations.",
-  //   ],
-  // },
+  {
+    title: "AWS Certified Cloud Practitioner",
+    company_name: "Amazon Web Services (AWS)",
+    icon: internship,
+    iconBg: "#232F3E",
+    date: "2025",
+    points: [
+      "Earned the AWS Certified Cloud Practitioner certification, demonstrating foundational cloud knowledge and expertise.",
+      "Gained hands-on experience with core AWS services including EC2, RDS, S3, CloudFront, and Load Balancer.",
+      "Applied AWS knowledge to design scalable, cloud-ready deployment architecture for production projects.",
+    ],
+  },
+  {
+    title: "Class XII (Senior Secondary)",
+    company_name: "Govt. HSS Hinota Kalan Hatta, Damoh, MP",
+    icon: school,
+    iconBg: "#383E56",
+    date: "2023",
+    points: [
+      "Achieved an outstanding score of 95% in the Madhya Pradesh Board examinations.",
+      "Honored as the District Topper for securing the highest marks in the region.",
+    ],
+  },
+  {
+    title: "Class X (High School)",
+    company_name: "Govt. High School Bhainsa Hatta, Damoh, MP",
+    icon: school,
+    iconBg: "#E6DEDD",
+    date: "2021",
+    points: [
+      "Secured an excellent score of 95% in the board examinations.",
+    ],
+  },
 ];
 
 

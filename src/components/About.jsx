@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
@@ -40,7 +40,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I am a passionate software developer skilled in C++, Python, and the MERN stack, with hands-on experience in Unity game development and AI/ML engineering. I build fast, scalable, and user-centric solutions from AI-powered web apps to immersive 3D games. I thrive on solving real-world problems and love collaborating to create things that matter. Let us build something amazing together!
+        I am a passionate software developer skilled in C++, Python, JavaScript, and the MERN Stack, with hands-on experience in AWS Cloud, Unity game development, and AI/ML engineering. I build fast, scalable, and user-centric solutions — from AI-powered web platforms and cloud-deployed services to immersive 3D games and AR experiences. I love solving real-world problems and thrive on creating things that make an impact. Let's build something amazing together!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
